@@ -1,0 +1,61 @@
+Clases y Arrays en JavaScript
+
+Clase pakiman que contiene
+nombre
+vida 
+ataque 
+3 objetos con ciclos en pantalla 
+misma definicion del objeto, instancias de una clase, cauchin pokacho y tocinauro objetos de la clase pakiman o como nombremos la clase según el caso. Cada objeto tiene unas propiedades especificas con elementos comunes. Para el caso, nombre, vida, ataque. 
+
+Creamos el respectivo html enlazada al respectivo archivo js. 
+
+Crear clase, definición de un objeto, al crearlo voy a permitirle modificar el nombre, vida y ataque. 
+Dentro de las clases hay unas funciones que se llaman constructores, constructor() {}
+Todo va dentro de las llaves {} 
+Las variables se agregan en el constructor usando this, indicador de la instancia de donde estoy, this es una referencia a la variable. 
+this.tipo="tierra"; 
+this hace referencia a las variables dentro de la clase, indicador de la instancia de la clase. 
+
+dentro de las clases no hay que escribir function, se entiende que estoy dentro de una clase, por lo tanto solo escribo el nombre de la función y sus respectivas instrucciones. 
+Afuera de la clase debo invocar la respectiva función para que pase. 
+variable.nombreFunción();   
+
+Con la llave cuadrada defino los arrays []
+nombrearray[1]="Hola"
+nombrearray[2]="bien"
+nombrearray[3]=3.14
+el valor de array al imprimir me muestra los respectivos valores
+
+var imagenes = [];
+imagenes["cauchin"]="jugador1.png";
+imagenes["pokacho"]="jugador2.png";
+imagenes["tocinauro"]="jugador3.png";
+
+recordar que con console.log(); puedo ver en el navegador con el inspector en consola los resultados del cod. 
+
+document lo que nos representa en el html el body 
+
+document.appendChild agregarle el hijo al html, a la estructura del html 
+
+document.body.appendChild(this.imagen); para mostrar en el html 
+Se crea toda una estructura para mostrar iamgen y datos caracteristicos, combinamos con etiquetas de html para organizar la impresión de los datos. 
+
+       document.body.appendChild(this.imagen);
+       document.write("<p>");
+       document.write("<strong>" + this.nombre + "</strong> <br/>");
+       document.write("Vida: " + this.vida + "<br/>");
+       document.write("Ataque: " + this.ataque);
+       document.write("<p>" + "<hr/>" );
+
+al final es necesario invocar la función con su respectiva variable para ver los resultados en el html 
+
+pokacho.mostrar(); 
+cauchin.mostrar();
+tocinauro.mostrar();
+
+
+
+
+
+
+
